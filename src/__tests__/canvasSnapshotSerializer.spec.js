@@ -1,9 +1,10 @@
+const hasha = require("hasha");
 const path = require("path");
 const createCanvasSnapshotSerializer = require("../canvasSnapshotSerializer");
 
 describe("canvasSnapshotSerializer", () => {
   const fsMock = jest.genMockFromModule("fs");
-  const hash = () => "hash-mock-value";
+  const hash = hasha;
   const prettyFormatMock = jest.genMockFromModule("pretty-format");
   const getStateMock = jest.fn();
 
@@ -268,7 +269,10 @@ describe("canvasSnapshotSerializer", () => {
 
   function createExpectedCanvas(canvas) {
     const expectedCanvas = canvas.cloneNode();
-    expectedCanvas.setAttribute("data-snapshot-image", hash(canvas.toDataURL()));
+    const ctx = canvas.getContext("2d");
+    const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data.toString();
+    expectedCanvas.setAttribute("data-snapshot-image", hash(data));
+
     return expectedCanvas;
   }
 });

@@ -2,7 +2,7 @@
 
 exports[`my test suite works 1`] = `
 <canvas
-  data-snapshot-image="99e2e6c9af9c059f1946964e4dbe5914d22d952261d6f26f0f013ed1a2f7f5677cb3643108bd25a90382cba24bf0fe84a1719d043b7063cbff8359b172ecb791"
+  data-snapshot-image="8a5185e59abea40cafc5fee7dd4ce43d13e3605a12db3545884953721c21a5b53cb2f30e0f5239756af97b799bedbfca191a02ed9edd9b534952d7c0c950d77b"
   height="200"
   width="200"
 />
@@ -11,7 +11,7 @@ exports[`my test suite works 1`] = `
 exports[`my test suite works for canvas wrapped by other elements 1`] = `
 <div>
   <canvas
-  data-snapshot-image="f02c73bff2ff9dad8908b9ca2fa63c02d6d92cd91d46f87e539bb3c79ba7cbcbdb1251a3db132598fb4be3eed46c5150e2c70395f3089d1f8a860c3836645b0d"
+  data-snapshot-image="8ca44bb3ce94db4977b7ed7b15b9797bed6febb7a206ea18742453b7f56b20820ea78f18d2f141e542e266678e3c3f11e87ee065353f9985ea3759de5a554e6b"
   height="200"
   width="200"
 />
